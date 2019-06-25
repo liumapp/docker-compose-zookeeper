@@ -21,8 +21,6 @@ cd cluster
 docker-compose up -d
 ````
 
-
-
 ## 相关参数说明
 
 * ZOO_MY_ID
