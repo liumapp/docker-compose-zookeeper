@@ -4,6 +4,8 @@ services:
         image: zookeeper
         restart: always
         container_name: zoo1
+        volumes:
+            - ./config:/conf
         ports:
             - "2181:2181"
         environment:
@@ -14,6 +16,8 @@ services:
         image: zookeeper
         restart: always
         container_name: zoo2
+        volumes:
+            - ./config:/conf
         ports:
             - "2182:2181"
         environment:
@@ -24,6 +28,8 @@ services:
         image: zookeeper
         restart: always
         container_name: zoo3
+        volumes:
+            - ./config:/conf
         ports:
             - "2183:2181"
         environment:
