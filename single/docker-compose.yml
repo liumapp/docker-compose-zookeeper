@@ -4,10 +4,13 @@ services:
     image: zookeeper
     restart: always
     container_name: zookeeper
+    volumes:
+      - ./config/zoo.cfg:/conf/zoo.cfg
     ports: 
       - "2181:2181"
     environment:
       ZOO_MY_ID: 1
+
 
 
       
