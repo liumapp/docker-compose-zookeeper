@@ -5,7 +5,7 @@ services:
     restart: always
     container_name: zookeeper
     volumes:
-      - ./config/zoo.cfg:/conf/zoo.cfg
+      - ./config:/conf
     ports: 
       - "2181:2181"
     environment:
